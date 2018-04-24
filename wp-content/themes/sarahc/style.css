@@ -27,10 +27,6 @@
 html {
 	font-size:62.5%;
 }
-body {
-	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	color:#444;
-}
 /* clear */
 .clear:before,
 .clear:after {
@@ -77,29 +73,6 @@ input:focus {
 	width:95%;
 	margin:0 auto;
 	position:relative;
-}
-/* header */
-.header {
-
-}
-/* logo */
-.logo {
-
-}
-.logo-img {
-
-}
-/* nav */
-.nav {
-
-}
-/* sidebar */
-.sidebar {
-
-}
-/* footer */
-.footer {
-
 }
 
 /*------------------------------------*\

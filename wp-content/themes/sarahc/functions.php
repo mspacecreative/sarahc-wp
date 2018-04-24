@@ -120,6 +120,9 @@ function html5blank_styles()
     
     wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true); // Custom scripts
     wp_enqueue_script('html5blankscripts'); // Enqueue it!
+    
+    wp_register_script('fontawesome', 'https://use.fontawesome.com/6ccd600e51.js', array('jquery'), '1.0.0', true); // Custom scripts
+    wp_enqueue_script('fontawesome'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
@@ -251,7 +254,7 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
 function html5_blank_view_article($more)
 {
     global $post;
-    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'html5blank') . '</a>';
+    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Project &raquo;', 'html5blank') . '</a>';
 }
 
 // Remove Admin bar
@@ -345,7 +348,7 @@ add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditi
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
-add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
+//add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -396,7 +399,7 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 \*------------------------------------*/
 
 // Create 1 Custom Post type for a Demo, called HTML5-Blank
-function create_post_type_html5()
+/*function create_post_type_html5()
 {
     register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
     register_taxonomy_for_object_type('post_tag', 'html5-blank');
@@ -432,6 +435,7 @@ function create_post_type_html5()
         ) // Add Category and Post Tags support
     ));
 }
+*/
 
 /*------------------------------------*\
 	ShortCode Functions
@@ -449,4 +453,17 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
     return '<h2>' . $content . '</h2>';
 }
 
-?>
+/*------------------------------------*\
+	ACF Options Page
+\*------------------------------------*/
+
+if( function_exists('acf_add_options_page') ) {
+ 	
+ 	// add sub page
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'General Information',
+		'menu_title' 	=> 'General Information',
+		'parent_slug' 	=> $parent['menu_slug'],
+	));
+	
+}
