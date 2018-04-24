@@ -313,11 +313,6 @@ div.vp-player-layout {
 	padding: 25px 0;
 }
 
-.logo {
-	position: relative;
-	top: -11px;
-}
-
 #right-side {
 	padding-top: 25px;
 	position: relative;
@@ -434,10 +429,6 @@ article {
 
 article:last-of-type {
 	margin-bottom: 0;
-}
-
-.logo {
-	max-width: 150px;
 }
 
 .poster-container {
@@ -607,17 +598,9 @@ section {
 	font-size: 60px;
 }
 
-.logo {
-	top: auto;
-}
-
 #right-side, #left-side {
 	padding-top: 0;
 	margin-top: 0;
-}
-
-.logo {
-	float: left;
 }
 
 nav li {
