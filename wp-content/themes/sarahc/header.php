@@ -56,7 +56,9 @@
 						<!-- /nav -->
 						
 						<!-- LOGO -->
-						<a href="<?php echo home_url(); ?>"><h1>SARAH MIHARA CREAGEN</h1></a>
+						<div class="logo">
+							<a href="<?php echo home_url(); ?>"><h1>SARAH MIHARA CREAGEN</h1></a>
+						</div>
 						<!-- /LOGO -->
 						
 					</div>
