@@ -635,7 +635,7 @@ nav li {
 }
 
 .cv article p:last-of-type {
-	margin-bottom: inherit;
+	margin-bottom: 15px;
 }
 
 @media (max-device-width: 1366px) {
