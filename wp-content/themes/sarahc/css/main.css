@@ -504,6 +504,8 @@ nav li {
 
 #left-side h1 {
 	text-align: center;
+	width: 100%;
+	display: inline-block;
 }
 
 .home #left-side {
