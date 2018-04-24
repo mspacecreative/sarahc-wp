@@ -403,6 +403,14 @@ nav li a {
 	margin: 25px 0 15px;
 }
 
+.logo {
+	text-align: center;
+}
+
+.logo a {
+	display: inline-block;
+}
+
 .single-content ul {
 	list-style: disc;
 	padding: 0 0 0 18px;
