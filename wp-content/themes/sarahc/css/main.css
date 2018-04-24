@@ -674,6 +674,10 @@ nav li a:after {
 	height: calc(100vh - 48px);
 }
 
+.logo {
+	text-align: left;
+}
+
 nav {
 	display: none;
 }
