@@ -257,11 +257,11 @@ function html5_blank_view_article($more)
     return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Project &raquo;', 'html5blank') . '</a>';
 }
 
-// Remove Admin bar
+/*// Remove Admin bar
 function remove_admin_bar()
 {
     return false;
-}
+}*/
 
 // Remove 'text/css' from our enqueued stylesheet
 function html5_style_remove($tag)
