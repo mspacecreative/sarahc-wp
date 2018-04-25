@@ -76,7 +76,7 @@ main a {
 	display: none;
 	position: absolute;
 	right: 5%;
-	top: 8px;
+	top: 18px;
 	z-index: 2;
 	-webkit-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
