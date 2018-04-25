@@ -623,11 +623,11 @@ nav li {
 	border-left: 0;
 }
 
-.inner {
+/*.inner {
 	display: block;
 	margin-bottom: 25px;
 	padding: 15px 0;
-}
+}*/
 
 .home .center-col {
 	height: calc(100vh - 64px);
