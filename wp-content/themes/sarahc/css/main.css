@@ -560,7 +560,7 @@ section {
 }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
 #left-side h1 {
 	font-size: 18px;

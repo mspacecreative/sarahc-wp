@@ -1,11 +1,11 @@
-$(window).resize(function () {
+/*$(window).resize(function () {
 	if ($(window).width() <= 980) {
 		$('nav').height($('.logo').height());
 	}
 	else {
 		$('nav').removeAttr('style');
 	}
-});
+});*/
 
 $('.menu-item-has-children').click(function(e) {
 	$(this).children('ul').slideToggle();
