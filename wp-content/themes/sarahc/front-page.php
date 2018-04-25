@@ -8,7 +8,7 @@
 					
 						<article class="clearfix">
 							<div class="center-col">
-								
+								<img src="<?php echo get_template_directory_uri(); ?>/img/creagen_cover-image.jpg" />
 							</div>
 						</article>
 						

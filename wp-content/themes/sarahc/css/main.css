@@ -339,18 +339,14 @@ img {
 	width: 100%;
 }
 
+.center-col img {
+	width: 100%;
+	height: auto;
+}
+
 .menu ul {
 	padding: 0;
 	margin: 0;
-}
-
-.home .center-col {
-	width: 100%;
-	background: url(../img/creagen_cover-image.jpg);
-	background-size: contain;
-	height: 100vh;
-	background-position: top center;
-	background-repeat: no-repeat;
 }
 
 .right-col {
@@ -622,16 +618,6 @@ nav li {
 	padding-left: 0;
 	border-left: 0;
 }
-
-/*.inner {
-	display: block;
-	margin-bottom: 25px;
-	padding: 15px 0;
-}*/
-
-.home .center-col {
-	height: calc(100vh - 64px);
-}
 }
 
 .cv article p:last-of-type {
@@ -672,10 +658,6 @@ nav li a:after {
 
 .post-navigation .half:nth-child(2n) {
 	width: 50%;
-}
-
-.home .center-col {
-	height: calc(100vh - 48px);
 }
 
 .logo {
